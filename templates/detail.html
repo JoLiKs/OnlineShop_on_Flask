@@ -1,0 +1,13 @@
+{% block body %}
+<div class="container mt-5">
+    <h1>{{article.title}}</h1>
+
+    <div class="alert alert-info">
+      <p>{{article.text}} </p>
+      <p>{{article.price}}</p>
+      <a href="/" class="btn btn-warning">Назад</a>
+      <a href="/{{article.id}}/delete" class="btn btn-danger">Удалить</a>
+    </div>
+
+</div>
+{% endblock %}
